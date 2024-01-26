@@ -1,7 +1,11 @@
-h1 {
-    /* background-color: red; */
-    font-size: 24px;
-    text-align: center;
-    margin:0;
-    padding: 48px;
+.TodoCount {
+  font-size: 24px;
+  text-align: center;
+  margin: 0;
+  padding: 48px;
+  font-weight: normal;
+}
+
+.TodoCount span {
+  font-weight: bold;
 }
