@@ -23,13 +23,27 @@ function App() {
   const completedTodos = todos.filter(todo=> todo.completed).length;
   const totalTodos = todos.length;
 
+  console.log("log 1");
+
+  // React.useEffect(()=>{
+  //   console.log("log 2");
+  // });
+
+  React.useEffect(()=>{
+    console.log("looog 2");
+  },[]);
+
+  // React.useEffect(()=>{
+  //   console.log("looog 2");
+  // },[totalTodos]);
+
+  console.log("log 3");
+
   const searchedTodos = todos.filter(
     (todo)=>{
       return todo.text.toLowerCase().includes(searchValue.toLowerCase());
     }
   )
-
-  
 
   const completarTodo = (text)=>{
     // console.log("Buscando->",text);    
