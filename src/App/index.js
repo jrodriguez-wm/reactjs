@@ -3,6 +3,8 @@ import { AppUI } from './AppUI';
 import { useLocalStorage } from './useLocalStorage';
 // import './App.css';
 
+// localStorage.removeItem("todos_v1");
+
 // const defaultTodos=[
 //   {text:'Cortar cebotlla',completed:true},
 //   {text:'Tomar el curso',completed:false},
@@ -12,32 +14,23 @@ import { useLocalStorage } from './useLocalStorage';
 // ];
 
 // localStorage.setItem("todos_v1",JSON.stringify(defaultTodos))
-// localStorage.removeItem("todos_v1");
 
 function App() {
   
-  const [todos,saveTodos]= useLocalStorage("todos_v1",[]);
+  let {
+    item : todos,
+    saveItem:saveTodos,
+    loading,
+    error
+  }= useLocalStorage("todos_v1",[]);
   const [searchValue, setSearchValue] = React.useState("");
   // console.log("los usuarios buscan todos de "+ searchValue);
 
+  todos=[];
+  console.log(todos);
+
   const completedTodos = todos.filter(todo=> todo.completed).length;
   const totalTodos = todos.length;
-
-  console.log("log 1");
-
-  // React.useEffect(()=>{
-  //   console.log("log 2");
-  // });
-
-  React.useEffect(()=>{
-    console.log("looog 2");
-  },[]);
-
-  // React.useEffect(()=>{
-  //   console.log("looog 2");
-  // },[totalTodos]);
-
-  console.log("log 3");
 
   const searchedTodos = todos.filter(
     (todo)=>{
@@ -69,6 +62,8 @@ function App() {
 
   return (
     <AppUI
+      loading={loading}
+      error={error}
       completedTodos ={completedTodos} 
       totalTodos ={totalTodos}
       searchValue ={searchValue}
