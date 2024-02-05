@@ -5,29 +5,29 @@ import { useLocalStorage } from './useLocalStorage';
 
 // localStorage.removeItem("todos_v1");
 
-// const defaultTodos=[
-//   {text:'Cortar cebotlla',completed:true},
-//   {text:'Tomar el curso',completed:false},
-//   {text:'Llorar con la Llorona',completed:false},
-//   {text:'Otro',completed:false},
-//   {text:'Nuevo',completed:true},
-// ];
+const defaultTodos=[
+  {text:'Cortar cebotlla',completed:true},
+  {text:'Tomar el curso',completed:false},
+  {text:'Llorar con la Llorona',completed:false},
+  {text:'Otro',completed:false},
+  {text:'Nuevo',completed:true},
+];
 
-// localStorage.setItem("todos_v1",JSON.stringify(defaultTodos))
+localStorage.setItem("todos_v1",JSON.stringify(defaultTodos))
 
 function App() {
-  
-  let {
+  // console.log(useLocalStorage.loading);
+
+  const {
     item : todos,
     saveItem:saveTodos,
     loading,
-    error
+    error,
+    
   }= useLocalStorage("todos_v1",[]);
   const [searchValue, setSearchValue] = React.useState("");
   // console.log("los usuarios buscan todos de "+ searchValue);
-
-  todos=[];
-  console.log(todos);
+  // console.log(test,loading,error);  
 
   const completedTodos = todos.filter(todo=> todo.completed).length;
   const totalTodos = todos.length;
