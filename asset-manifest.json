@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/jrodriguez-wm/reactjs/static/css/main.571dbef5.css",
-    "main.js": "/jrodriguez-wm/reactjs/static/js/main.0c49910f.js",
-    "index.html": "/jrodriguez-wm/reactjs/index.html",
-    "static/media/delete.svg": "/jrodriguez-wm/reactjs/static/media/delete.7018c4465589031bd51c8efbe21df9ca.svg",
-    "static/media/check.svg": "/jrodriguez-wm/reactjs/static/media/check.e9a948bba52a34123d2ed7aeda0ea495.svg",
-    "main.571dbef5.css.map": "/jrodriguez-wm/reactjs/static/css/main.571dbef5.css.map",
-    "main.0c49910f.js.map": "/jrodriguez-wm/reactjs/static/js/main.0c49910f.js.map"
+    "main.css": "/reactjs/static/css/main.571dbef5.css",
+    "main.js": "/reactjs/static/js/main.c15ec175.js",
+    "index.html": "/reactjs/index.html",
+    "static/media/delete.svg": "/reactjs/static/media/delete.7018c4465589031bd51c8efbe21df9ca.svg",
+    "static/media/check.svg": "/reactjs/static/media/check.e9a948bba52a34123d2ed7aeda0ea495.svg",
+    "main.571dbef5.css.map": "/reactjs/static/css/main.571dbef5.css.map",
+    "main.c15ec175.js.map": "/reactjs/static/js/main.c15ec175.js.map"
   },
   "entrypoints": [
     "static/css/main.571dbef5.css",
-    "static/js/main.0c49910f.js"
+    "static/js/main.c15ec175.js"
   ]
 }
