@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Users/Flash/OneDrive/React/static/css/main.571dbef5.css",
+    "main.js": "/Users/Flash/OneDrive/React/static/js/main.349825e3.js",
+    "index.html": "/Users/Flash/OneDrive/React/index.html",
+    "static/media/delete.svg": "/Users/Flash/OneDrive/React/static/media/delete.7018c4465589031bd51c8efbe21df9ca.svg",
+    "static/media/check.svg": "/Users/Flash/OneDrive/React/static/media/check.e9a948bba52a34123d2ed7aeda0ea495.svg",
+    "main.571dbef5.css.map": "/Users/Flash/OneDrive/React/static/css/main.571dbef5.css.map",
+    "main.349825e3.js.map": "/Users/Flash/OneDrive/React/static/js/main.349825e3.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.571dbef5.css",
+    "static/js/main.349825e3.js"
+  ]
+}
